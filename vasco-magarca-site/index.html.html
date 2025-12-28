@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vasco Magarça</title>
+  <style>
+    body {
+      margin:0;
+      font-family: Arial, Helvetica, sans-serif;
+      color:#fff;
+      background: url('sao-januario.jpg') no-repeat center center fixed;
+      background-size: cover;
+    }
+    body::before {
+      content:"";
+      position:fixed;
+      top:0; left:0;
+      width:100%; height:100%;
+      background:rgba(0,0,0,0.75);
+      z-index:-1;
+    }
+    header {
+      background: radial-gradient(circle at top, rgba(0,0,0,0.6), rgba(0,0,0,0.95));
+      padding:40px 20px;
+      text-align:center;
+    }
+    header img {
+      width:160px;
+      margin-bottom:15px;
+    }
+    header h1 { font-size:42px; margin:10px 0; letter-spacing:2px; }
+    header p { color:#cfcfcf; font-size:18px; }
+    nav {
+      background:#000;
+      display:flex;
+      justify-content:center;
+      gap:25px;
+      padding:15px;
+      flex-wrap:wrap;
+      border-top:2px solid #cfae70;
+      border-bottom:2px solid #cfae70;
+    }
+    nav a { color:#fff; text-decoration:none; font-weight:bold; }
+    nav a:hover { color:#cfae70; }
+    section {
+      padding:70px 20px;
+      max-width:1100px;
+      margin:auto;
+    }
+    h2 {
+      color:#cfae70;
+      margin-bottom:30px;
+      text-align:center;
+      font-size:32px;
+    }
+    .cards {
+      display:grid;
+      grid-template-columns:repeat(auto-fit, minmax(250px,1fr));
+      gap:25px;
+    }
+    .card {
+      background:rgba(0,0,0,0.8);
+      padding:25px;
+      border-radius:12px;
+      text-align:center;
+      border:1px solid #333;
+    }
+    .menu-item {
+      display:flex;
+      justify-content:space-between;
+      border-bottom:1px dashed #444;
+      padding:12px 0;
+      font-size:18px;
+    }
+    .gallery {
+      display:grid;
+      grid-template-columns:repeat(auto-fit, minmax(220px,1fr));
+      gap:20px;
+    }
+    .gallery div {
+      background:url('torcida.jpg') center/cover no-repeat;
+      height:200px;
+      border-radius:10px;
+      border:2px solid #cfae70;
+    }
+    footer {
+      background:#000;
+      text-align:center;
+      padding:35px;
+      color:#aaa;
+      border-top:2px solid #cfae70;
+    }
+  </style>
+</head>
+<body>
+<header>
+  <img src="logo-vasco-magarca.png" alt="Vasco Magarça">
+  <h1>VASCO MAGARÇA</h1>
+  <p>Bar da Torcida • Clima de São Januário • Zona Oeste RJ</p>
+</header>
+<nav>
+  <a href="#sobre">Sobre</a>
+  <a href="#cardapio">Cardápio</a>
+  <a href="#loja">Loja</a>
+  <a href="#galeria">Galeria</a>
+  <a href="#contato">Contato</a>
+</nav>
+<section id="sobre">
+  <h2>Sobre o Bar</h2>
+  <p style="text-align:center; max-width:800px; margin:auto; color:#ccc;">Bar temático do Vasco da Gama em Magarça, com transmissão de jogos, produtos oficiais e clima de arquibancada.</p>
+</section>
+<section id="cardapio">
+  <h2>Cardápio</h2>
+  <div class="menu-item"><span>Chopp Gelado</span><strong>R$ 10</strong></div>
+  <div class="menu-item"><span>Hambúrguer do Gigante</span><strong>R$ 25</strong></div>
+  <div class="menu-item"><span>Porção Dia de Jogo</span><strong>R$ 35</strong></div>
+</section>
+<section id="loja">
+  <h2>Loja Vasco</h2>
+  <div class="cards">
+    <div class="card"><h3>Boné Vasco</h3><p>Modelos exclusivos</p></div>
+    <div class="card"><h3>Kit Dia de Jogo</h3><p>Copo + boné + camisa</p></div>
+  </div>
+</section>
+<section id="galeria">
+  <h2>Galeria da Torcida</h2>
+  <div class="gallery">
+    <div>Foto da Galera</div><div>Dia de Jogo</div><div>Comemoração</div>
+  </div>
+</section>
+<section id="contato">
+  <h2>Contato</h2>
+  <p style="text-align:center; color:#ccc;">Magarça – Guaratiba • WhatsApp • Instagram</p>
+</section>
+<footer>
+  <p>© Vasco Magarça – Zona Oeste RJ</p>
+</footer>
+</body>
+</html>
